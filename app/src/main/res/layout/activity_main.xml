@@ -1,0 +1,183 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome to the Gaming Quiz"
+            android:textSize="25sp"
+            android:textColor="#000080"
+            android:paddingLeft="25dp"
+            android:paddingBottom="25dp"
+            />
+
+        <TextView
+            android:id="@+id/question1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Identify two games by Activision."
+            android:textSize="20sp"
+            android:textColor="#000080"
+            android:paddingLeft="5dp"
+            android:paddingBottom="25dp"
+            />
+
+        <CheckBox
+            android:id="@+id/answer1a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:text="Call of Duty"
+            android:textSize="16sp" />
+        <CheckBox
+            android:id="@+id/answer1b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:text="Burnout Paradise"
+            android:textSize="16sp" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:text="Frostbyte 3"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:paddingTop="25dp"
+            android:id="@+id/question2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Which of these are the games by Rockstar ?"
+            android:textSize="20sp"
+            android:textColor="#000080"
+            android:paddingLeft="5dp"
+            android:paddingBottom="25dp"
+            />
+
+        <CheckBox
+            android:id="@+id/answer2a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:text="Max Payne"
+            android:textSize="16sp" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:text="2010"
+            android:textSize="16sp" />
+        <CheckBox
+            android:id="@+id/answer2b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:text="LA Noire"
+            android:textSize="16sp"
+            />
+        <TextView
+            android:paddingTop="25dp"
+            android:id="@+id/question3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Which game was awarded as the Game of the year in 2015 ?"
+            android:textSize="20sp"
+            android:textColor="#000080"
+            android:paddingLeft="5dp"
+
+            />
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="25dp">
+            <RadioButton
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fallout 4"
+                android:paddingBottom="15dp"
+                />
+            <RadioButton
+                android:id="@+id/answer3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Witcher 3"
+                />
+        </RadioGroup>
+        <TextView
+            android:paddingTop="25dp"
+            android:id="@+id/question4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What is the next installment to the Battlefield series  ?"
+            android:textSize="20sp"
+            android:textColor="#000080"
+            android:paddingLeft="5dp"
+
+            />
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="25dp">
+            <RadioButton
+                android:id="@+id/answer4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Battlefield 5"
+                android:paddingBottom="15dp"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Battlefield 2"
+
+
+               />
+        </RadioGroup>
+        <TextView
+            android:paddingTop="25dp"
+            android:id="@+id/question5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Which console has the famous Uncharted series ?"
+            android:textSize="20sp"
+            android:textColor="#000080"
+            android:paddingLeft="5dp"
+            />
+
+        <EditText
+            android:paddingTop="25dp"
+            android:id="@+id/name_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Answer here"
+            android:inputType="text"
+            />
+
+        <Button
+            android:paddingTop="25dp"
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit Answers"
+            android:onClick="order"/>
+
+
+    </LinearLayout>
+    </ScrollView>
