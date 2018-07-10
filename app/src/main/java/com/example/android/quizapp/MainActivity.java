@@ -66,11 +66,11 @@ public class MainActivity extends AppCompatActivity {
 
 
         int finalScore=increment(isAns1a,isAns1b,isAns2a,isAns2b,isAns3,isAns4,isAns5);
-        Context context = getApplicationContext();
-        CharSequence text = "You have "+finalScore+" out of 5 questions correct!";
-        int duration = Toast.LENGTH_LONG;
-
-        Toast toast = Toast.makeText(context, text, duration);
-        toast.show();
+        if(score >= 3){
+      Toast.makeText(getApplicationContext(), name + " You passed the Quiz with score " + score, Toast.LENGTH_SHORT).show();
+}else{
+      Toast.makeText(getApplicationContext(), name + " You failed with score " + score, Toast.LENGTH_SHORT).show();
+    } 
+        score=0;
     }
 }
