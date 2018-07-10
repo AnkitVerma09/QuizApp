@@ -72,6 +72,7 @@
             android:text="Max Payne"
             android:textSize="16sp" />
         <CheckBox
+            android:id="@+id/answer2c"      
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingLeft="24dp"
