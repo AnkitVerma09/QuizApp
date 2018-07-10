@@ -21,13 +21,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     int score = 0 ;
-    public int increment(Boolean hasAns1a,Boolean hasAns1b,Boolean hasAns2a, Boolean hasAns2b, Boolean hasAns3, Boolean hasAns4, String ans5)
+    public int increment(Boolean hasAns1a,Boolean hasAns1b,Boolean hasAns1c,Boolean hasAns2a, Boolean hasAns2b,Boolean hasAns2c, Boolean hasAns3, Boolean hasAns4, String ans5)
     {
-        if ((hasAns1a)&&(hasAns1b)) {
+        if ((hasAns1a)&&(hasAns1b)&&(!hasAns1c) {
             score = score + 1;
         }
 
-        if ((hasAns2a)&&(hasAns2b)) {
+        if ((hasAns2a)&&(hasAns2b)&&(!hasAns1c) {
             score = score + 1;
         }
         if (hasAns3) {
@@ -51,10 +51,14 @@ public class MainActivity extends AppCompatActivity {
         boolean isAns1a= Ans1a.isChecked();
         CheckBox Ans1b = (CheckBox) findViewById(R.id.answer1a);
         boolean isAns1b= Ans1b.isChecked();
+        CheckBox Ans1c = (CheckBox) findViewById(R.id.answer1a);
+        boolean isAns1c= Ans1c.isChecked();
         CheckBox Ans2a = (CheckBox) findViewById(R.id.answer2a);
         boolean isAns2a= Ans2a.isChecked();
         CheckBox Ans2b= (CheckBox) findViewById(R.id.answer2b);
         boolean isAns2b= Ans2b.isChecked();
+        CheckBox Ans2c= (CheckBox) findViewById(R.id.answer1a);
+        boolean isAns2c= Ans2c.isChecked();
         RadioButton Ans3 = (RadioButton) findViewById(R.id.answer3);
         boolean isAns3= Ans3.isChecked();
         RadioButton Ans4 = (RadioButton) findViewById(R.id.answer4);
@@ -65,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
         String isAns5 = nameEditable.toString();
 
 
-        int finalScore=increment(isAns1a,isAns1b,isAns2a,isAns2b,isAns3,isAns4,isAns5);
+        int finalScore=increment(isAns1a,isAns1b,isAns1c,isAns2a,isAns2b,isAns2c,isAns3,isAns4,isAns5);
         if(score >= 3){
       Toast.makeText(getApplicationContext(), name + " You passed the Quiz with score " + score, Toast.LENGTH_SHORT).show();
 }else{
