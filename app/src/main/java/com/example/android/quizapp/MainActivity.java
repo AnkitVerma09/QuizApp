@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
-
+    String an="Playstation";
     int score = 0 ;
     public int increment(Boolean hasAns1a,Boolean hasAns1b,Boolean hasAns1c,Boolean hasAns2a, Boolean hasAns2b,Boolean hasAns2c, Boolean hasAns3, Boolean hasAns4, String ans5)
     {
@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         if (hasAns4) {
             score = score + 1;
         }
-        if (ans5=="Playstation") {
+        if (ans5.equalsIgnoreCase(ans5) {
             score = score + 1;
         }
 
